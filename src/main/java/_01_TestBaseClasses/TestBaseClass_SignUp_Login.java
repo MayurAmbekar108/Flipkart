@@ -86,20 +86,43 @@ public class TestBaseClass_SignUp_Login implements ITestListener {
 
 	}
 
+//	@BeforeTest
+//	public void setExtent() throws IOException {
+//		fr = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\configfiles\\config.properties");
+//		prop.load(fr);
+//		String browser1 = prop.getProperty("browser");
+//		//String runOnUr = prop.getProperty("URL");
+//
+//		extent = new ExtentReports(
+//				"C:\\Users\\ASZ\\eclipse-workspace\\Z.flipkart\\Extent_report\\Extent_report.html", true);
+//		
+////		fr = new FileReader(System.getProperty("user.dir") + "Extent_report\\Extent_report.html");
+////		prop.load(fr);
+//		extent.addSystemInfo("Host name ", "FaceBook");
+//		extent.addSystemInfo("User name ", "Ganesh/Mayur");
+//		extent.addSystemInfo("Envirnment ", "QA");
+//		extent.addSystemInfo("Browser ", browser1);
+//		//extent.addSystemInfo("URL ", runOnUr);
+//	}
+	
 	@BeforeTest
 	public void setExtent() throws IOException {
-		fr = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\configfiles\\config.properties");
-		prop.load(fr);
-		String browser1 = prop.getProperty("browser");
-		//String runOnUr = prop.getProperty("URL");
+	    fr = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\configfiles\\config.properties");
+	    prop.load(fr);
+	    String browser1 = prop.getProperty("browser");
 
-		extent = new ExtentReports(
-				"C:\\Users\\ASZ\\eclipse-workspace\\Z.flipkart\\Extent_report\\Extent_report.html", true);
-		extent.addSystemInfo("Host name ", "FaceBook");
-		extent.addSystemInfo("User name ", "Ganesh/Mayur");
-		extent.addSystemInfo("Envirnment ", "QA");
-		extent.addSystemInfo("Browser ", browser1);
-		//extent.addSystemInfo("URL ", runOnUr);
+	    // Define the directory for the extent report
+	    String reportDirectory = System.getProperty("user.dir") + "\\Extent_report";
+	    // Define the full path for the extent report file
+	    String reportFilePath = reportDirectory + "\\Extent_report.html";
+
+	    // Initialize ExtentReports with the directory path
+	    extent = new ExtentReports(reportFilePath, true);
+
+	    extent.addSystemInfo("Host name ", "FaceBook");
+	    extent.addSystemInfo("User name ", "Ganesh/Mayur");
+	    extent.addSystemInfo("Envirnment ", "QA");
+	    extent.addSystemInfo("Browser ", browser1);
 	}
 
 	@AfterMethod
