@@ -21,7 +21,7 @@ public class TC001_Verify_FB_Login extends TestBaseClass_SignUp_Login{
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		_01_LoginPage login = new _01_LoginPage(driver);
 
-		// Enter Email
+		// Enter Email test
 		try {
 			login.sendEmail();;
 			log.info(" Email entered");
