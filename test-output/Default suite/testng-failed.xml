@@ -8,8 +8,8 @@
           <include name="teardown"/>
           <include name="browserlaunch"/>
           <include name="verifyEditRoleOnAssigneeListPage"/>
-          <include name="browserclose"/>
           <include name="setExtent"/>
+          <include name="browserclose"/>
         </methods>
       </class> <!-- _01_Login.TC001_Verify_FB_Login -->
     </classes>
