@@ -13,44 +13,56 @@ import com.relevantcodes.extentreports.LogStatus;
 import _01_TestBaseClasses.TestBaseClass_SignUp_Login;
 import _03_POM_Classes._01_LoginPage;
 
-public class TC001_Verify_FB_Login extends TestBaseClass_SignUp_Login{
+public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login{
 	@Test
-	public void verifyEditRoleOnAssigneeListPage() throws InterruptedException, IOException {
-		extentTest = extent.startTest(" FB Login ");
+	public void verifyFlipkartLoginSuccess() throws InterruptedException, IOException {
+		extentTest = extent.startTest(" Flipkart Login ");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		_01_LoginPage login = new _01_LoginPage(driver);
 
-		// Enter Email test
+		// Enter Email or phone number manually
 		try {
 			login.sendEmail();;
 			log.info(" Email entered");
+			Thread.sleep(10000);
 		} catch (NoSuchElementException e) {
 			log.error(" Email not entered");
 			throw new AssertionError(e);
 		}
-
-		// Enter Password
+		
+		// Click on Request OTP button
 		try {
-			login.sendPassword();
-			log.info(" Password entered");
+			login.clickOnRequestOtp();
+			log.info(" Clicked on Request OTP button");
 		} catch (NoSuchElementException e) {
-			log.error(" Password not entered");
+			log.error(" Not clicked on Request OTP button");
 			throw new AssertionError(e);
 		}
 
-		// Click on log in facebook
+		// Enter Otp manually and click on submit button
 		try {
-			login.clickOnLogIn();
-			log.info(" Clicked on login button");
+			Thread.sleep(15000);
+			login.sendOtpNumbers();
+			log.info(" Otp entered");
 		} catch (NoSuchElementException e) {
-			log.error(" Not clicked on login");
+			log.error(" Otp not entered");
+			throw new AssertionError(e);
+		}
+
+		// Click on Verify button
+		try {
+			login.clickOnVerifyButton();
+			log.info(" Clicked on Verify button");
+		} catch (NoSuchElementException e) {
+			log.error(" Not clicked on Verify button");
 			throw new AssertionError(e);
 		}
 		
 		{
 			try {
-				String expectedurl = "https://www.facebook.com/?sk=welcome";
+				Thread.sleep(5000);
+				String expectedurl = "https://www.flipkart.com/";
 				wait.until(ExpectedConditions.urlToBe(expectedurl));			
 				String actualurl = driver.getCurrentUrl();
 				log.info("URL is: " + actualurl);

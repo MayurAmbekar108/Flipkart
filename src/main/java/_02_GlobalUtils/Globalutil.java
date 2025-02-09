@@ -10,17 +10,23 @@ import org.openqa.selenium.WebElement;
 
 public class Globalutil {
 
-	// Login Functionality
+	// Login Functionality Enter Email or Phone Number
 	public void sendEmail(WebElement email) {
-		email.sendKeys("Mayurambekar108@gmail.com"); 
+		email.sendKeys(""); 
+	}
+	
+	// Click on Request OTP button
+	public void clickOnRequestOtp(WebElement requestOtp) {
+		requestOtp.click();
+	}
+	
+	// Enter OTP manually
+	public void sendOtpNumbers(WebElement OtpNumber) {
+		OtpNumber.sendKeys("");
 	}
 
-	public void sendPassword(WebElement password) {
-		password.sendKeys("Test@1234");
-	}
-
-	public void clickOnLogIn(WebElement LogInButton) {
-		LogInButton.click();
+	public void clickOnVerifyButton(WebElement verrifyButton) {
+		verrifyButton.click();
 	}
  
 	// SignUp Functionality

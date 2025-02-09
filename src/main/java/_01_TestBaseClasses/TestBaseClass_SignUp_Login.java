@@ -41,7 +41,7 @@ public class TestBaseClass_SignUp_Login implements ITestListener {
 		fr = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\configfiles\\config.properties");
 		prop.load(fr);
 		String browser1 = prop.getProperty("browser");
-		String FbLoginUrl = prop.getProperty("FB_Login_URL");
+		String flipkart_Login_URL = prop.getProperty("Flipkart_Login_URL");
 
 		if (browser1.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -74,9 +74,9 @@ public class TestBaseClass_SignUp_Login implements ITestListener {
 			log.error("browser not launched");
 		}
 
-		driver.get(FbLoginUrl);
-		System.out.println(FbLoginUrl);
-		log.info("Landed on url " + FbLoginUrl);
+		driver.get(flipkart_Login_URL);
+		System.out.println(flipkart_Login_URL);
+		log.info("Landed on url " + flipkart_Login_URL);
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

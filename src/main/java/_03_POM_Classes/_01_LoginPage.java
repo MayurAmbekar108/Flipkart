@@ -12,28 +12,40 @@ public class _01_LoginPage
 	WebDriver driver;
 	Globalutil global = new Globalutil();
 
-	// Email
-	@FindBy(id="email") private WebElement email; //:r0:
+	// Email or Phone Number manually
+	@FindBy(xpath = "(//input[@type='text'])[2]") 
+	private WebElement email; //:r0:
 	
 	public void sendEmail() 
 	{
 		global.sendEmail(email);
 	} 
+	
+	//Request to send OTP
+	@FindBy(xpath = "(//button)[2]")  
+	private WebElement requestOtp;
 
-	// Password
-	@FindBy(id = "pass") private WebElement password;
-
-	public void sendPassword() 
+	public void clickOnRequestOtp() 
 	{
-		global.sendPassword(password);
+		global.clickOnRequestOtp(requestOtp);
 	}
 
-	// LogIn button 
-	@FindBy(xpath = "(//button[@type='submit'])")  private WebElement LogInButton;
+	// Enter Otp manually and click on login button
+	@FindBy(id = "pass") 
+	private WebElement OtpNumber;
 
-	public void clickOnLogIn () 
+	public void sendOtpNumbers() 
 	{
-		global.clickOnLogIn(LogInButton);
+		global.sendOtpNumbers(OtpNumber);
+	}
+
+	// Click on Verify button
+	@FindBy(xpath = "(//button[@type='submit'])[2]")  
+	private WebElement verrifyButton;
+
+	public void clickOnVerifyButton () 
+	{
+		global.clickOnVerifyButton(verrifyButton);
 	}
 
 	public _01_LoginPage(WebDriver driver)
