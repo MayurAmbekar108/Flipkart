@@ -1,0 +1,41 @@
+00:20:36 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:20:37 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:20:37 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:20:42 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:20:42 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:20:42 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:21:04 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+00:23:58 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:23:58 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:23:59 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:24:04 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:24:04 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:24:04 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:26:00 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:26:01 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:26:01 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:26:06 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:26:06 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:26:06 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:26:28 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+00:27:17 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:27:18 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:27:18 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:27:23 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:27:23 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:27:23 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:27:45 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+00:29:01 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:29:03 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:29:03 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:29:08 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:29:08 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:29:08 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:29:30 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+00:33:20 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+00:33:21 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.facebook.com/
+00:33:21 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+00:33:26 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+00:33:26 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
+00:33:26 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
+00:33:49 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
