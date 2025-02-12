@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-09T12:05:34 IST" name="Default suite" finished-at="2025-02-09T12:06:06 IST" duration-ms="32781">
+  <suite started-at="2025-02-13T00:48:11 IST" name="Default suite" finished-at="2025-02-13T00:49:04 IST" duration-ms="53229">
     <groups>
     </groups>
-    <test started-at="2025-02-09T12:05:34 IST" name="Default test" finished-at="2025-02-09T12:06:06 IST" duration-ms="32781">
-      <class name="_01_Login.TC001_Verify_FB_Login">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b]" started-at="2025-02-09T12:05:34 IST" name="setExtent" finished-at="2025-02-09T12:05:34 IST" duration-ms="179" status="PASS">
+    <test started-at="2025-02-13T00:48:11 IST" name="Default test" finished-at="2025-02-13T00:49:04 IST" duration-ms="53229">
+      <class name="AfterLogin.TC002_Verify_AddNewAddress">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6]" started-at="2025-02-13T00:48:11 IST" name="setExtent" finished-at="2025-02-13T00:48:11 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="browserlaunch(java.lang.String)[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b]" started-at="2025-02-09T12:05:34 IST" name="browserlaunch" finished-at="2025-02-09T12:05:43 IST" duration-ms="8847" status="PASS">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String)[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6]" started-at="2025-02-13T00:48:11 IST" name="browserlaunch" finished-at="2025-02-13T00:48:20 IST" duration-ms="8819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,49 +22,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="verifyEditRoleOnAssigneeListPage()[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b]" started-at="2025-02-09T12:05:43 IST" name="verifyEditRoleOnAssigneeListPage" finished-at="2025-02-09T12:05:59 IST" duration-ms="16360" status="FAIL">
+        <test-method signature="verifymanageAddress()[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6]" started-at="2025-02-13T00:48:20 IST" name="verifymanageAddress" finished-at="2025-02-13T00:48:57 IST" duration-ms="37156" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for url to be "https://www.facebook.com/?sk=welcome". Current url: "https://www.facebook.com/two_step_verification/authentication/?encrypted_context=AWNZR3TSUxZb0vkI6JzCQq2rki3s1MelWCqPUNz6bjdA_LbotKmyqC0hoXdLcAlaVmL6VGIkONQowvlS_4y0dGUk05uaEe_adN8Aaikbwp20PTVhcW2arBLc6Akr2_V-BOGojFrKTb2eybep8nI01yAI0A-bNoX8qxtvPZTX7VF04YO6MA-MSOuwjmlws45Kx4qf-mSffaoadjNqYiAN6LeojO0ZrqDYW3hUq-kFgUc-nObIAcPBfV4DGZVAAi6E3PDH9qHhOqqCpRXsQviWCdQJKfdZLMvUeum2xDOKsOGCnJWjSqL-bNKgDze65fTXKSPRt1bWNwW3Q2OpYO6sPrFJye0wMGs_oGY7IdMaslE0_aTx5wxE9QoB68OUj1qsTeyhmkhhBnA2-F3clE3lWRuPheMEs4qNkiK9RTP1dR_tQuQw6aGvFDvoo83ByFuTIncBE_a2_B6yHSvDxIagmXQIZJCmDMWP_t-6gPFnAi5E3YjKTd9wjO8YCf8NlFfLptta9BuVsDyp1RXoPiY5LXZg5MD65Cye73QmIP_4AK_Kp1z6B97DRDi00qi69d1E5EMrpl0kDeWxl_mqsYoKzcpDF3uMiubsW0qABLBcQVzgB6aVYaY4CcLwI-ATHy4FBjVSTA5FGWv0CdmzS14acj7BovlB2koAmRsCkASnB4uVvSRO29dJL62A1kqM_qwllax7mLAkH2dHQVpDrt55uQbI_Ak&flow=pre_authentication&next" (tried for 15 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for url to be "https://www.flipkart.com/?redirectFrom=logout". Current url: "https://www.flipkart.com/account/addresses" (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GANESH', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+System info: host: 'DESKTOP-FHH7LA1', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ganes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be89b57ff7bde8b807cca8fd0d878538]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.196, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ASZ\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dcf0bbd1c2e143d1e19905c31bea8ba]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be "https://www.facebook.com/?sk=welcome". Current url: "https://www.facebook.com/two_step_verification/authentication/?encrypted_context=AWNZR3TSUxZb0vkI6JzCQq2rki3s1MelWCqPUNz6bjdA_LbotKmyqC0hoXdLcAlaVmL6VGIkONQowvlS_4y0dGUk05uaEe_adN8Aaikbwp20PTVhcW2arBLc6Akr2_V-BOGojFrKTb2eybep8nI01yAI0A-bNoX8qxtvPZTX7VF04YO6MA-MSOuwjmlws45Kx4qf-mSffaoadjNqYiAN6LeojO0ZrqDYW3hUq-kFgUc-nObIAcPBfV4DGZVAAi6E3PDH9qHhOqqCpRXsQviWCdQJKfdZLMvUeum2xDOKsOGCnJWjSqL-bNKgDze65fTXKSPRt1bWNwW3Q2OpYO6sPrFJye0wMGs_oGY7IdMaslE0_aTx5wxE9QoB68OUj1qsTeyhmkhhBnA2-F3clE3lWRuPheMEs4qNkiK9RTP1dR_tQuQw6aGvFDvoo83ByFuTIncBE_a2_B6yHSvDxIagmXQIZJCmDMWP_t-6gPFnAi5E3YjKTd9wjO8YCf8NlFfLptta9BuVsDyp1RXoPiY5LXZg5MD65Cye73QmIP_4AK_Kp1z6B97DRDi00qi69d1E5EMrpl0kDeWxl_mqsYoKzcpDF3uMiubsW0qABLBcQVzgB6aVYaY4CcLwI-ATHy4FBjVSTA5FGWv0CdmzS14acj7BovlB2koAmRsCkASnB4uVvSRO29dJL62A1kqM_qwllax7mLAkH2dHQVpDrt55uQbI_Ak&flow=pre_authentication&next" (tried for 15 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be "https://www.flipkart.com/?redirectFrom=logout". Current url: "https://www.flipkart.com/account/addresses" (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GANESH', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+System info: host: 'DESKTOP-FHH7LA1', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ganes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be89b57ff7bde8b807cca8fd0d878538
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.196, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ASZ\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dcf0bbd1c2e143d1e19905c31bea8ba
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at _01_Login.TC001_Verify_FB_Login.verifyEditRoleOnAssigneeListPage(TC001_Verify_FB_Login.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
+at AfterLogin.TC002_Verify_AddNewAddress.verifymanageAddress(TC002_Verify_AddNewAddress.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
@@ -73,23 +73,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEditRoleOnAssigneeListPage -->
-        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b]" started-at="2025-02-09T12:05:59 IST" name="browserclose" finished-at="2025-02-09T12:06:06 IST" duration-ms="6784" status="PASS">
+        </test-method> <!-- verifymanageAddress -->
+        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6]" started-at="2025-02-13T00:48:57 IST" name="browserclose" finished-at="2025-02-13T00:49:04 IST" duration-ms="6646" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEditRoleOnAssigneeListPage status=FAILURE method=TC001_Verify_FB_Login.verifyEditRoleOnAssigneeListPage()[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b] output={null}]]]>
+                <![CDATA[[TestResult name=verifymanageAddress status=FAILURE method=TC002_Verify_AddNewAddress.verifymanageAddress()[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:_01_Login.TC001_Verify_FB_Login@5491f68b]" started-at="2025-02-09T12:06:06 IST" name="teardown" finished-at="2025-02-09T12:06:06 IST" duration-ms="546" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:AfterLogin.TC002_Verify_AddNewAddress@25d958c6]" started-at="2025-02-13T00:49:04 IST" name="teardown" finished-at="2025-02-13T00:49:04 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- _01_Login.TC001_Verify_FB_Login -->
+      </class> <!-- AfterLogin.TC002_Verify_AddNewAddress -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

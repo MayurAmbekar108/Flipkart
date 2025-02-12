@@ -1,4 +1,4 @@
-package _01_Login;
+package AfterLogin;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -13,7 +13,7 @@ import _01_TestBaseClasses.TestBaseClass_SignUp_Login;
 import _03_POM_Classes._01_LoginPage;
 import _03_POM_Classes._02_Flipkart_Homepage;
 
-public class TC002_Verify_Flipkart_Logout extends TestBaseClass_SignUp_Login {
+public class TC001_Verify_Flipkart_Logout extends TestBaseClass_SignUp_Login {
 	@Test
 	public void verifyFlipkartLoginSuccess() throws InterruptedException, IOException {
 		extentTest = extent.startTest(" Flipkart Logout ");

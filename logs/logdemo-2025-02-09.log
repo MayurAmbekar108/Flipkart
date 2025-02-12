@@ -53,3 +53,25 @@
 12:05:43 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Password entered
 12:05:44 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on login button
 12:06:06 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+18:55:57 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+18:55:58 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+18:55:59 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+18:56:00 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.flipkart.com/account/login?ret=/
+18:56:01 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.flipkart.com/account/login?ret=/
+18:56:02 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+18:56:02 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+18:56:07 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+18:56:07 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+18:56:17 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on Request OTP button
+18:56:17 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on Request OTP button
+18:56:42 [main] ERROR _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Otp not entered
+18:56:42 [main] ERROR _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Otp not entered
+18:56:49 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+18:56:50 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed
+18:58:58 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Chrome browser launched
+18:58:59 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Landed on url https://www.flipkart.com/account/login?ret=/
+18:58:59 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser launched and maximized
+18:59:05 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Email entered
+18:59:15 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Clicked on Request OTP button
+18:59:40 [main] ERROR _01_TestBaseClasses.TestBaseClass_SignUp_Login -  Otp not entered
+18:59:46 [main] INFO  _01_TestBaseClasses.TestBaseClass_SignUp_Login - Browser closed

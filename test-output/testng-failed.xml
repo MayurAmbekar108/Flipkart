@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="_01_Login.TC001_Verify_FB_Login">
+      <class name="AfterLogin.TC002_Verify_AddNewAddress">
         <methods>
           <include name="teardown"/>
           <include name="browserlaunch"/>
-          <include name="verifyEditRoleOnAssigneeListPage"/>
-          <include name="setExtent"/>
           <include name="browserclose"/>
+          <include name="setExtent"/>
+          <include name="verifymanageAddress"/>
         </methods>
-      </class> <!-- _01_Login.TC001_Verify_FB_Login -->
+      </class> <!-- AfterLogin.TC002_Verify_AddNewAddress -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,47 +8,57 @@ import org.openqa.selenium.support.PageFactory;
 
 import _02_GlobalUtils.Globalutil;
 
-public class _02_Flipkart_Homepage 
-{
+public class _02_Flipkart_Homepage {
 
 	WebDriver driver;
 	Globalutil global = new Globalutil();
-	
-	//After login Hover on Profile 
-		@FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/header/div[2]/div[2]/div/div/div") 
-		private WebElement Profile;
-		
-		public void hoverOverProfileAndClick(Actions actions ) throws InterruptedException {
-	        // Move the cursor over the Profile element
-	        actions.moveToElement(Profile).perform();
-	       }
-		
-		// Click on logout 
-		
-		@FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/header/div[2]/div[2]/div/div/div/ul/a[9]")
-		private WebElement LogOut;
-		
-		public void clickOnlogout()
-		{
-			LogOut.click();
-		}
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		public _02_Flipkart_Homepage(WebDriver driver)
-		{
-			this.driver = driver;
-			PageFactory.initElements(driver, this);
-		}
+	// After login Hover on Profile
+	@FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/header/div[2]/div[2]/div/div/div")
+	private WebElement Profile;
 
+	public void hoverOverProfileAndClick(Actions actions) throws InterruptedException {
+		// Move the cursor over the Profile element
+		actions.moveToElement(Profile).perform();
+	}
+
+	// Click on logout
+
+	@FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/header/div[2]/div[2]/div/div/div/ul/a[9]")
+	private WebElement LogOut;
+
+	public void clickOnlogout() {
+		LogOut.click();
+	}
 	
+	// Click on Orders 
+	
+	@FindBy (xpath = "//a[@title='My Profile']")
+	private WebElement myProfile;
+	
+	public void ClickOnMyProfile()
+	{
+		myProfile.click();
+	}
+	
+	// Click on Manage address
+	
+	@FindBy (xpath = "//div[text()='Manage Addresses']")
+	private WebElement ManageAddress;
+	
+	public void ManageAddress()
+	{
+		ManageAddress.click();
+	}
+	
+	
+	
+	
+	
+
+	public _02_Flipkart_Homepage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
 }
