@@ -3,6 +3,8 @@ package _01_Login;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,9 +15,11 @@ import com.relevantcodes.extentreports.LogStatus;
 import _01_TestBaseClasses.TestBaseClass_SignUp_Login;
 import _03_POM_Classes._01_LoginPage;
 
-public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login{
+public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login
+{
 	@Test
-	public void verifyFlipkartLoginSuccess() throws InterruptedException, IOException {
+	public void verifyFlipkartLoginSuccess() throws InterruptedException, IOException
+	{
 		extentTest = extent.startTest(" Flipkart Login ");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -23,11 +27,12 @@ public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login{
 
 		// Enter Email or phone number manually
 		try {
-			login.sendEmail();;
+			login.sendEmail();
 			log.info(" Email entered");
-			Thread.sleep(10000);
+			System.out.println("Email entered");
 		} catch (NoSuchElementException e) {
 			log.error(" Email not entered");
+			System.out.println("Email not entered");
 			throw new AssertionError(e);
 		}
 		
@@ -35,31 +40,26 @@ public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login{
 		try {
 			login.clickOnRequestOtp();
 			log.info(" Clicked on Request OTP button");
+			System.out.println("Clicked on Request OTP button");
 		} catch (NoSuchElementException e) {
 			log.error(" Not clicked on Request OTP button");
-			throw new AssertionError(e);
-		}
-
-		// Enter Otp manually and click on submit button
-		try {
-			Thread.sleep(15000);
-			login.sendOtpNumbers();
-			log.info(" Otp entered");
-		} catch (NoSuchElementException e) {
-			log.error(" Otp not entered");
+			System.out.println("Not clicked on Request OTP button");
 			throw new AssertionError(e);
 		}
 
 		// Click on Verify button
 		try {
+			Thread.sleep(10000);
 			login.clickOnVerifyButton();
 			log.info(" Clicked on Verify button");
+			System.out.println(" Clicked on Verify button");
 		} catch (NoSuchElementException e) {
 			log.error(" Not clicked on Verify button");
+			System.out.println(" Not clicked on Verify button");
 			throw new AssertionError(e);
 		}
 		
-		{
+		//Assertion for Login
 			try {
 				Thread.sleep(5000);
 				String expectedurl = "https://www.flipkart.com/";
@@ -76,8 +76,9 @@ public class TC001_Verify_Flipkart_Login extends TestBaseClass_SignUp_Login{
 				extentTest.log(LogStatus.FAIL, "URL is not matching, TC failed");
 				System.out.println("URL is not matching, TC failed");
 			}
-		}
+		
 	
 		extent.endTest(extentTest);
 	}
+
 }

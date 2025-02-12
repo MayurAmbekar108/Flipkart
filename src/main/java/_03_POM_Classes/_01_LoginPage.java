@@ -2,6 +2,7 @@ package _03_POM_Classes;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import _02_GlobalUtils.Globalutil;
@@ -30,14 +31,6 @@ public class _01_LoginPage
 		global.clickOnRequestOtp(requestOtp);
 	}
 
-	// Enter Otp manually and click on login button
-	@FindBy(id = "pass") 
-	private WebElement OtpNumber;
-
-	public void sendOtpNumbers() 
-	{
-		global.sendOtpNumbers(OtpNumber);
-	}
 
 	// Click on Verify button
 	@FindBy(xpath = "(//button[@type='submit'])[2]")  
@@ -47,6 +40,7 @@ public class _01_LoginPage
 	{
 		global.clickOnVerifyButton(verrifyButton);
 	}
+	
 
 	public _01_LoginPage(WebDriver driver)
 	{

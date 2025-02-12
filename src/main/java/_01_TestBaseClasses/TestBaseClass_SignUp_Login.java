@@ -21,9 +21,7 @@ import org.testng.annotations.Parameters;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import _02_GlobalUtils.TakeScreenShot;
-//import _02_GlobalUtils.TakeScreenShot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.*;
 
@@ -49,20 +47,20 @@ public class TestBaseClass_SignUp_Login implements ITestListener {
 			log.info("Chrome browser launched");
 		}
 
-		else if (browser1.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless");
-			options.addArguments("--disable-gpu");
-			options.addArguments("--window-size=1920,1080");
-			driver = new FirefoxDriver(options);
-		}
-
-//		else if (browser1.equals("firefox")) {
+//		else if (browser1.equalsIgnoreCase("firefox")) {
 //			WebDriverManager.firefoxdriver().setup();
-//			driver = new FirefoxDriver();
-//			log.info("Firefox browser launched");
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.addArguments("--headless");
+//			options.addArguments("--disable-gpu");
+//			options.addArguments("--window-size=1920,1080");
+//			driver = new FirefoxDriver(options);
 //		}
+
+		else if (browser1.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			log.info("Firefox browser launched");
+		}
 
 		else if (browser1.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -85,25 +83,6 @@ public class TestBaseClass_SignUp_Login implements ITestListener {
 		Thread.sleep(5000);
 
 	}
-
-//	@BeforeTest
-//	public void setExtent() throws IOException {
-//		fr = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\configfiles\\config.properties");
-//		prop.load(fr);
-//		String browser1 = prop.getProperty("browser");
-//		//String runOnUr = prop.getProperty("URL");
-//
-//		extent = new ExtentReports(
-//				"C:\\Users\\ASZ\\eclipse-workspace\\Z.flipkart\\Extent_report\\Extent_report.html", true);
-//		
-////		fr = new FileReader(System.getProperty("user.dir") + "Extent_report\\Extent_report.html");
-////		prop.load(fr);
-//		extent.addSystemInfo("Host name ", "FaceBook");
-//		extent.addSystemInfo("User name ", "Ganesh/Mayur");
-//		extent.addSystemInfo("Envirnment ", "QA");
-//		extent.addSystemInfo("Browser ", browser1);
-//		//extent.addSystemInfo("URL ", runOnUr);
-//	}
 	
 	@BeforeTest
 	public void setExtent() throws IOException {

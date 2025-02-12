@@ -12,7 +12,7 @@ public class Globalutil {
 
 	// Login Functionality Enter Email or Phone Number
 	public void sendEmail(WebElement email) {
-		email.sendKeys(""); 
+		email.sendKeys("9766990462"); 
 	}
 	
 	// Click on Request OTP button
